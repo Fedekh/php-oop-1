@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: linear-gradient(90deg, #23b515, #00aa78, #0097b5, #007eca);
+    height: 80px;
+    line-height: 80px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin: 30px;
+}
+
+li::before{
+    content: '👉';
+    padding: 0 20px;
+}
+
+
+.container h1{
+    color: red;
+    font-size: 2rem;
+    font-weight: 600;
+}
