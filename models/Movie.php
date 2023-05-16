@@ -1,8 +1,4 @@
 <?php
-// include_once __DIR__ . '/Genres.php';
-// include_once __DIR__ . '/database.php';
-
-
 class Movie
 {
     // proprietà    
@@ -11,9 +7,10 @@ class Movie
     public $year;
 
    
-    function __construct($_title, Genres $_genres)
+    function __construct($_title, $_year, Genres $_genres)
     {
         $this->title = $_title;
+        $this->year = $_year;
         $this->genres= $_genres;
     }
 
@@ -21,7 +18,8 @@ class Movie
     // metodi
     public function giveMeInfo()
     {
-        echo " Hai scelto come film : <span class='title'>" . "{$this->title}" . "</span>" ."<br> ";
+        echo " <h3>Hai scelto come film :</h3> <span class='title'>" . "{$this->title}" . "</span>" ."<br> ";
+        echo "<h4> Uscito nel: </h4> <p class='year'> {$this->year} </p>";
         echo $this->genres->giveGenres();
         
     }

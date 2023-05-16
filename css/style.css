@@ -29,17 +29,28 @@ li{
 
 }
 
-li::before{
-    content: '👉';
+h3,h4{
+    margin: 10px 0;
 }
 
+
+h3::before{
+    content: '👉';
+    position: relative;
+    left: -15px;
+}
+.year{
+    color: rgb(180, 32, 202);
+}
 span{
+    font-size: 1.2rem;
     color: red;
 }
 
 p{
     color: green;
 }
+
 .container h1{
     color: red;
     font-size: 2rem;

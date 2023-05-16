@@ -1,6 +1,6 @@
 <?php
-
-include_once __DIR__ . '/Models/database.php';
+include_once __DIR__ . '/Components/header.php';
+include_once __DIR__ . '/Components/main.php';
 
 ?>
 
@@ -15,31 +15,7 @@ include_once __DIR__ . '/Models/database.php';
     <link rel="stylesheet" href="./css/style.css">
     <title>MOVIE</title>
 </head>
-
 <body>
-
-    <header>
-
-        <div class="container">
-            <h1>MOVIES</h1>
-        </div>
-    </header>
-
-    <main>
-        
-        <ul class="container">
-            <?php foreach ($films as $film) { ?>
-                <li>
-                    <?php $film->giveMeInfo() ; ?>
-                </li>
-
-            <?php } ?>
-        </ul>
-
-
-    </main>
-
-
 
 </body>
 
