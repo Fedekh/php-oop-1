@@ -19,18 +19,27 @@ header{
 
 ul{
     list-style-type: none;
+    word-wrap: break-word;
 }
 
 li{
     margin: 30px;
+    word-wrap: break-word;
+    word-break: break-all;
+
 }
 
 li::before{
     content: '👉';
-    padding: 0 20px;
 }
 
+span{
+    color: red;
+}
 
+p{
+    color: green;
+}
 .container h1{
     color: red;
     font-size: 2rem;

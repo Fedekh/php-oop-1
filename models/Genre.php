@@ -12,7 +12,6 @@ class Genres
     public function giveGenres()
     {
         $genresString = implode(", ", $this->genres);
-        // echo " I cui generi associati sono: <br> {$genresString}";
-        return $genresString;
+        echo " I cui generi associati sono: <p>  {$genresString}</p>";
     }
 }

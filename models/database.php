@@ -1,9 +1,8 @@
 <?php
 
 include_once __DIR__ . '/Movie.php';
-include_once __DIR__ . '/Genres.php';
+include_once __DIR__ . '/Genre.php';
 
-$genre= new Genres(['Azione', 'Thriller','horror']);
 
 
 $films = [

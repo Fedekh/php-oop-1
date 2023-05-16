@@ -1,9 +1,6 @@
 <?php
 
-include_once __DIR__ . '/Models/Movie.php';
 include_once __DIR__ . '/Models/database.php';
-include_once __DIR__ . '/Models/Genre.php';
-
 
 ?>
 
@@ -22,6 +19,7 @@ include_once __DIR__ . '/Models/Genre.php';
 <body>
 
     <header>
+
         <div class="container">
             <h1>MOVIES</h1>
         </div>
@@ -29,10 +27,10 @@ include_once __DIR__ . '/Models/Genre.php';
 
     <main>
         
-        <ul>
+        <ul class="container">
             <?php foreach ($films as $film) { ?>
                 <li>
-                    <?php $film->giveMeInfo(); ?>
+                    <?php $film->giveMeInfo() ; ?>
                 </li>
 
             <?php } ?>
