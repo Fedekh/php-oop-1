@@ -1,30 +1,14 @@
 <?php
-    class Movie{
-        public $title;
-        public $genre;
-        public $year;
-        public $language;
-        public $country;
-        // public $director;
-        // public $rated;
-        // public $cast;
-        // public $poster;
-        // public $website;
-        // public $awards;
-        function __construct( $_title, $_genre)
-        {
-            $this->title = $_title;
-            $this->genre = $_genre;
-        }
-
-        
-
-    }
-
-    $film1 = new Movie('Matrix', 'Fantasy');
+include_once __DIR__ . '/models/Movie.php';
+    
+    $film1 = new Movie('Matrix', 'Fantasy', 'horror', 'comedy', 'thriller', 'drama');
     $film2 = new Movie('Blade', 'Comedy');
     var_dump($film1) .  "<br>";
     var_dump($film2) .  "<br>";
+
+    echo ($film1->giveMeInfo()).  "<br>" .  "<br>";
+    echo ($film2->giveMeInfo()).  "<br>";
+
 
 
 ?>
